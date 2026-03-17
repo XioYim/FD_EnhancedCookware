@@ -1,46 +1,11 @@
+A Farmer's Delight addon featuring an advanced multi-function Grand Cookpot.
+Supports a 4×3 input grid, vessel slot, fuel slot, liquid slot, and complex recipe conditions (stove restrictions, heat requirements, fluid requirements, player tags, and command triggers).
+See GitHub https://github.com/XioYim/FD_EnhancedCookware
+or the in-game config file (config/fd_enhancedcookware-common.toml) for full documentation.
+Some example recipes are bundled for reference — please remove them when packaging modpacks!
 
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
-
-Note also that the patches are built against "un-renamed" MCP source code (aka
-SRG Names) - this means that you will not be able to read them directly against
-normal code.
-
-Setup Process:
-==============================
-
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
-
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `./gradlew genEclipseRuns`
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
-
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `./gradlew genIntellijRuns`
-4. Refresh the Gradle Project in IDEA if required.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-(this does not affect your code) and then start the process again.
-
-Mapping Names:
-=============================
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
-build.gradle. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
-
-Additional Resources: 
-=========================
-Community Documentation: https://docs.minecraftforge.net/en/1.20.1/gettingstarted/
-LexManos' Install Video: https://youtu.be/8VEdtQLuLO0
-Forge Forums: https://forums.minecraftforge.net/
-Forge Discord: https://discord.minecraftforge.net/
+农夫乐事附属，增加了一个高级的多功能厨锅。
+支持 4×3 输入格、器皿槽、热量槽、液体槽，以及复杂配方条件（炉灶限制、热量要求、液体要求、玩家标签和命令触发）。
+详见 GitHub https://github.com/XioYim/FD_EnhancedCookware
+或游戏文件 config/fd_enhancedcookware-common.toml 中的详细信息。
+游戏自带一些配方，可供参考，适配整合包时请移除这些默认配方！
