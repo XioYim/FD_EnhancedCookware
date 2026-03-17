@@ -1,0 +1,32 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "地狱火辣椒汤 — 仅下界炉灶地狱火(soul=false) / 高燃 / 消耗热量40",
+  "ingredients": [
+    {"item": "farmersdelight:hot_cocoa", "count": 1},
+    {"item": "minecraft:blaze_powder",   "count": 2},
+    {"item": "minecraft:magma_cream",    "count": 1},
+    {"item": "minecraft:nether_wart",    "count": 3},
+    {"item": "minecraft:ghast_tear",     "count": 1}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {
+    "item": "minecraft:suspicious_stew",
+    "count": 1,
+    "nbt": "{Effects:[{EffectId:12,EffectDuration:400}]}"
+  },
+  "cookingtime": 600,
+  "experience": 3.0,
+  "require_block": true,
+  "required_blocks": ["mynethersdelight:nether_stove[soul=false]"],
+  "require_roaring": true,
+  "heat_consumption": 120,
+  "start_command_player": "particle minecraft:flame ~ ~1 ~ 0.3 0.3 0.3 0.05 20",
+  "tick_command_block": "particle minecraft:lava ~ ~1 ~ 0.2 0.1 0.2 0.05 2",
+  "tick_interval": 10,
+  "finish_command": "playsound minecraft:block.fire.extinguish master @a[distance=..10] ~ ~ ~ 1 0.8",
+  "jei_description": [
+    "§c仅可在下界炉灶的§4地狱火§c上烹制！",
+    "§7炽热的地狱精华凝聚而成，赋予火焰抗性。",
+    "§e消耗 120 点热量。"
+  ]
+}

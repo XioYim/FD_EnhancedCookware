@@ -1,0 +1,18 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "标签材料汤 — 使用 forge tag 作为材料，接受任意符合标签的物品",
+  "ingredients": [
+    {"item": "minecraft:bread",  "count": 2},
+    {"tag": "forge:seeds",       "count": 4},
+    {"tag": "forge:vegetables",  "count": 3},
+    {"item": "minecraft:egg",    "count": 2}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {"item": "farmersdelight:vegetable_soup", "count": 2},
+  "cookingtime": 280,
+  "experience": 0.8,
+  "jei_description": [
+    "§7接受任何符合 forge:seeds、forge:vegetables 标签的物品。",
+    "§a材料选择自由度极高！"
+  ]
+}

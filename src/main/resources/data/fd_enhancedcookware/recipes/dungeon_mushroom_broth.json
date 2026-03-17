@@ -1,0 +1,23 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "地牢蘑菇浓汤 — 地牢炉灶 / 普通火 / 消耗牛奶",
+  "ingredients": [
+    {"item": "minecraft:brown_mushroom", "count": 4},
+    {"item": "minecraft:red_mushroom",   "count": 2},
+    {"item": "minecraft:mushroom_stem",  "count": 1},
+    {"item": "minecraft:potato",         "count": 2},
+    {"item": "minecraft:egg",            "count": 1}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {"item": "farmersdelight:mushroom_soup", "count": 2},
+  "cookingtime": 450,
+  "experience": 1.2,
+  "require_block": true,
+  "required_blocks": ["dungeonsdelight:dungeon_stove"],
+  "required_fluid": "minecraft:milk",
+  "fluid_consumption": 500,
+  "jei_description": [
+    "§7地牢深处采集的菌菇，以牛奶慢炖而成。",
+    "§6需消耗 500 mL 牛奶。"
+  ]
+}

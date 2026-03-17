@@ -1,0 +1,48 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "传说之剑 — 下界合金剑，Sharpness X + 多属性 + 自定义名称和Lore，需所有炉灶 + 高燃",
+  "recipe_title": "§6§l传奇锻造",
+  "ingredients": [
+    {"item": "minecraft:netherite_sword",  "count": 1},
+    {"item": "minecraft:nether_star",      "count": 1},
+    {"item": "minecraft:blaze_rod",        "count": 4},
+    {"item": "minecraft:dragon_breath",    "count": 1},
+    {"item": "minecraft:diamond",          "count": 8},
+    {"item": "minecraft:gold_ingot",       "count": 6},
+    {"item": "minecraft:lava_bucket",      "count": 1}
+  ],
+  "result": {
+    "item": "minecraft:netherite_sword",
+    "count": 1,
+    "nbt": "{display:{Name:'{\"text\":\"天焰斩\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"锻造于下界熔炉之心\",\"color\":\"dark_red\",\"italic\":false}','{\"text\":\"每一击皆燃烧命运\",\"color\":\"red\",\"italic\":false}','{\"text\":\"[ 传说·唯一 ]\",\"color\":\"dark_gray\",\"italic\":false}']},Enchantments:[{id:\"minecraft:sharpness\",lvl:10s},{id:\"minecraft:fire_aspect\",lvl:3s},{id:\"minecraft:unbreaking\",lvl:5s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:3s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:30.0d,Operation:0,UUID:[I;-1000001,0,0,1],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:2.4d,Operation:0,UUID:[I;-1000002,0,0,2],Slot:\"mainhand\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0d,Operation:0,UUID:[I;-1000003,0,0,3],Slot:\"mainhand\"}]}"
+  },
+  "cookingtime": 2400,
+  "experience": 20.0,
+  "require_block": true,
+  "required_blocks": [
+    "mynethersdelight:nether_stove[soul=false]",
+    "mynethersdelight:nether_stove[soul=true]"
+  ],
+  "require_roaring": true,
+  "heat_consumption": 60,
+  "require_tags": true,
+  "required_tags": ["Yim", "blacksmith"],
+  "show_tags_in_jei": true,
+  "start_command_player": "say §6开始锻造传说之剑...",
+  "tick_command_block": "particle minecraft:flame ~ ~1 ~ 0.3 0.3 0.3 0.05 5",
+  "tick_interval": 20,
+  "finish_command": [
+    "playsound minecraft:block.anvil.use master @a[distance=..15] ~ ~ ~ 1 0.8",
+    "particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1"
+  ],
+  "output_command_player": [
+    "effect give @s minecraft:strength 600 4 true",
+    "effect give @s minecraft:fire_resistance 600 0 true"
+  ],
+  "jei_description": [
+    "§6需要下界炉灶（任意火焰）+ 高燃 + 60点热量。",
+    "§7需要权限标签：§cYim §7和 §cblacksmith§7。",
+    "§c攻击伤害 +30 / 攻击速度 +2.4 / 最大生命 +10❤",
+    "§7附魔：锋利X·烈焰III·耐久V·经验修补·抢夺III·横扫之刃III"
+  ]
+}

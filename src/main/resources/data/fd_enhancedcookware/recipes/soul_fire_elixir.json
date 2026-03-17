@@ -1,0 +1,26 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "灵魂火精华汤 — 仅下界炉灶灵魂火(soul=true) / 普通火 / 无热量消耗",
+  "ingredients": [
+    {"item": "minecraft:soul_sand",      "count": 2},
+    {"item": "minecraft:wither_rose",    "count": 1},
+    {"item": "minecraft:bone_meal",      "count": 3},
+    {"item": "minecraft:nether_wart",    "count": 2}
+  ],
+  "container": {"item": "minecraft:glass_bottle"},
+  "result": {
+    "item": "minecraft:potion",
+    "count": 1,
+    "nbt": "{Potion:\"minecraft:healing\"}"
+  },
+  "cookingtime": 400,
+  "experience": 2.0,
+  "require_block": true,
+  "required_blocks": ["mynethersdelight:nether_stove[soul=true]"],
+  "tick_command_block": "particle minecraft:soul ~ ~1 ~ 0.2 0.2 0.2 0.02 3",
+  "tick_interval": 8,
+  "jei_description": [
+    "§9仅可在下界炉灶的§5灵魂火§9上烹制！",
+    "§7幽蓝的灵魂之力注入其中，化为治愈药剂。"
+  ]
+}

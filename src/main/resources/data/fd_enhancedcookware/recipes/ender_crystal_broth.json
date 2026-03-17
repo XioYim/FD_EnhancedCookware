@@ -1,0 +1,32 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "末地水晶浓汤 — 末地炉灶或炉灶 / 高燃 / 消耗热量30",
+  "ingredients": [
+    {"item": "minecraft:ender_pearl",    "count": 2},
+    {"item": "minecraft:chorus_fruit",   "count": 3},
+    {"item": "minecraft:phantom_membrane","count": 1},
+    {"item": "minecraft:popped_chorus_fruit","count": 2}
+  ],
+  "container": {"item": "minecraft:glass_bottle"},
+  "result": {
+    "item": "minecraft:potion",
+    "count": 1,
+    "nbt": "{Potion:\"minecraft:slow_falling\"}"
+  },
+  "cookingtime": 480,
+  "experience": 2.5,
+  "require_block": true,
+  "required_blocks": [
+    "endersdelight:endstone_stove",
+    "farmersdelight:stove"
+  ],
+  "require_roaring": true,
+  "heat_consumption": 30,
+  "tick_command_block": "particle minecraft:portal ~ ~1 ~ 0.3 0.3 0.3 0.05 5",
+  "tick_interval": 6,
+  "jei_description": [
+    "§5末地炉灶或炉灶（任意一种）均可使用。",
+    "§7末地能量凝聚，赋予漂浮之力。",
+    "§e消耗 30 点热量。"
+  ]
+}

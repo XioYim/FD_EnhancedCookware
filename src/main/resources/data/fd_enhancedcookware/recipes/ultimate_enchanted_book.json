@@ -1,0 +1,48 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "究极附魔书 — Fortune V + Efficiency X + Unbreaking V + Mending + Silk Touch，任意炉灶",
+  "recipe_title": "§b§l究极附魔融合",
+  "ingredients": [
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "nbt": "{StoredEnchantments:[{id:\"minecraft:fortune\",lvl:3s}]}"
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "nbt": "{StoredEnchantments:[{id:\"minecraft:efficiency\",lvl:5s}]}"
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "nbt": "{StoredEnchantments:[{id:\"minecraft:mending\",lvl:1s}]}"
+    },
+    {"item": "minecraft:book",       "count": 3},
+    {"item": "minecraft:lapis_lazuli","count": 32},
+    {"item": "minecraft:diamond",    "count": 4},
+    {"item": "minecraft:experience_bottle", "count": 6}
+  ],
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "count": 1,
+    "nbt": "{StoredEnchantments:[{id:\"minecraft:fortune\",lvl:5s},{id:\"minecraft:efficiency\",lvl:10s},{id:\"minecraft:unbreaking\",lvl:5s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:silk_touch\",lvl:1s}],display:{Name:'{\"text\":\"究极矿工宝典\",\"color\":\"aqua\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"五种附魔融于一卷\",\"color\":\"blue\",\"italic\":false}','{\"text\":\"时运V·效率X·耐久V·经验修补·精准采集\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"[ 稀世孤本 ]\",\"color\":\"dark_gray\",\"italic\":false}']}}"
+  },
+  "cookingtime": 1800,
+  "experience": 15.0,
+  "require_block": true,
+  "required_blocks": [
+    "farmersdelight:stove",
+    "dungeonsdelight:dungeon_stove",
+    "endersdelight:endstone_stove"
+  ],
+  "require_roaring": true,
+  "heat_consumption": 30,
+  "required_fluid": "minecraft:water",
+  "fluid_consumption": 400,
+  "jei_description": [
+    "§b需要时运III/效率V/经验修补 附魔书各一本作为原料。",
+    "§7融合后获得：§a时运V §7/ §e效率X §7/ §b耐久V §7/ §6经验修补 §7/ §f精准采集§7。",
+    "§7注意：时运与精准采集不可同时使用，但书本可同时存储。"
+  ]
+}

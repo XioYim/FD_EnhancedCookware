@@ -1,0 +1,56 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "至尊混合配方 — 所有要求叠加：标签+炉灶+高燃+热量消耗+液体",
+  "ingredients": [
+    {"item": "minecraft:nether_star",    "count": 1},
+    {"item": "minecraft:ender_pearl",    "count": 3},
+    {"item": "minecraft:blaze_rod",      "count": 2},
+    {"item": "minecraft:ghast_tear",     "count": 1},
+    {"item": "minecraft:shulker_shell",  "count": 1},
+    {"item": "minecraft:wither_rose",    "count": 2}
+  ],
+  "container": {"item": "minecraft:glass_bottle"},
+  "result": {
+    "item": "minecraft:potion",
+    "count": 1,
+    "nbt": "{Potion:\"minecraft:luck\",display:{Name:'{\"text\":\"至尊幸运药剂\",\"color\":\"green\",\"bold\":true,\"italic\":false}'}}"
+  },
+  "cookingtime": 2400,
+  "experience": 20.0,
+  "require_block": true,
+  "required_blocks": [
+    "farmersdelight:stove",
+    "mynethersdelight:nether_stove[soul=false]",
+    "dungeonsdelight:dungeon_stove",
+    "endersdelight:endstone_stove"
+  ],
+  "require_roaring": true,
+  "heat_consumption": 80,
+  "required_fluid": "minecraft:water",
+  "fluid_consumption": 750,
+  "require_tags": true,
+  "required_tags": ["chef", "Yim"],
+  "show_tags_in_jei": true,
+  "start_command_player": [
+    "say 至尊配方开始制作！",
+    "particle minecraft:totem_of_undying ~ ~1 ~ 0.5 0.5 0.5 0.1 30"
+  ],
+  "tick_command_block": "particle minecraft:enchant ~ ~1 ~ 0.4 0.4 0.4 0.05 5",
+  "tick_interval": 4,
+  "finish_command": [
+    "playsound minecraft:ui.toast.challenge_complete master @a[distance=..20] ~ ~ ~ 1 1",
+    "particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0.5 3"
+  ],
+  "output_command_player": [
+    "effect give @s minecraft:luck 6000 0 true",
+    "effect give @s minecraft:hero_of_the_village 1200 2 true"
+  ],
+  "jei_description": [
+    "§6§l= 至尊混合配方 =",
+    "§c需要 chef §c且§c Yim 双重权限标签。",
+    "§4需要高燃火焰，消耗 §e80§4 点热量。",
+    "§b需消耗 §e750 mL§b 水。",
+    "§7四种炉灶任选其一。",
+    "§a完成后赋予幸运 + 村庄英雄效果。"
+  ]
+}

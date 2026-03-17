@@ -1,0 +1,28 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "丰收田园汤 — 全部使用原版/Forge 已有物品标签",
+  "ingredients": [
+    {"tag": "forge:mushrooms",       "count": 2},
+    {"tag": "forge:crops/potato",    "count": 2},
+    {"tag": "forge:crops/carrot",    "count": 2},
+    {"tag": "forge:crops/beetroot",  "count": 1},
+    {"tag": "forge:seeds/pumpkin",   "count": 2},
+    {"item": "minecraft:egg",        "count": 1}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {"item": "farmersdelight:vegetable_soup", "count": 2},
+  "cookingtime": 320,
+  "experience": 1.0,
+  "require_block": true,
+  "required_blocks": ["farmersdelight:stove"],
+  "required_fluid": "minecraft:water",
+  "fluid_consumption": 300,
+  "jei_description": [
+    "§7使用的标签均为原版/Forge 内建标签：",
+    "§a forge:mushrooms §7（红/棕蘑菇）",
+    "§a forge:crops/potato §7（马铃薯）",
+    "§a forge:crops/carrot §7（胡萝卜）",
+    "§a forge:crops/beetroot §7（甜菜根）",
+    "§a forge:seeds/pumpkin §7（南瓜种子）"
+  ]
+}

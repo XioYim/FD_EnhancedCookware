@@ -1,0 +1,35 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "熔岩浓汤 — 下界炉灶地狱火 / 大量消耗岩浆 / 高燃",
+  "ingredients": [
+    {"item": "minecraft:magma_block",  "count": 2},
+    {"item": "minecraft:magma_cream",  "count": 3},
+    {"item": "minecraft:blaze_rod",    "count": 2},
+    {"item": "minecraft:fire_charge",  "count": 1}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {
+    "item": "minecraft:suspicious_stew",
+    "count": 1,
+    "nbt": "{Effects:[{EffectId:12,EffectDuration:600},{EffectId:10,EffectDuration:300}]}"
+  },
+  "cookingtime": 700,
+  "experience": 4.0,
+  "require_block": true,
+  "required_blocks": ["mynethersdelight:nether_stove[soul=false]"],
+  "require_roaring": true,
+  "heat_consumption": 120,
+  "required_fluid": "minecraft:lava",
+  "fluid_consumption": 1000,
+  "tick_command_block": "particle minecraft:lava ~ ~1 ~ 0.4 0.2 0.4 0.1 5",
+  "tick_interval": 5,
+  "finish_command": [
+    "particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 1 1",
+    "playsound minecraft:entity.blaze.death master @a[distance=..10] ~ ~ ~ 0.8 1.2"
+  ],
+  "jei_description": [
+    "§4极度危险！需要大量岩浆（1000 mL）。",
+    "§c仅可在下界炉灶地狱火上烹制。",
+    "§e消耗 120 点热量，赋予火焰抗性与力量。"
+  ]
+}

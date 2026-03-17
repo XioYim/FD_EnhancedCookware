@@ -1,0 +1,38 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "终极强化药水 — 6种正面效果，需下界炉灶地狱火 + 高燃 + Yim标签 + 熔岩液体",
+  "recipe_title": "§6§l终极强化药水",
+  "ingredients": [
+    {"item": "minecraft:blaze_powder",    "count": 4},
+    {"item": "minecraft:ghast_tear",      "count": 2},
+    {"item": "minecraft:nether_wart",     "count": 3},
+    {"item": "minecraft:magma_cream",     "count": 2},
+    {"item": "minecraft:golden_carrot",   "count": 2},
+    {"item": "minecraft:sugar",           "count": 3},
+    {"item": "minecraft:rabbit_foot",     "count": 1}
+  ],
+  "container": {"item": "minecraft:glass_bottle"},
+  "result": {
+    "item": "minecraft:potion",
+    "count": 2,
+    "nbt": "{Potion:\"minecraft:empty\",CustomPotionColor:16755200,CustomPotionEffects:[{Id:5,Amplifier:3,Duration:9600,ShowParticles:1b,ShowIcon:1b},{Id:1,Amplifier:3,Duration:7200,ShowParticles:1b,ShowIcon:1b},{Id:10,Amplifier:2,Duration:4800,ShowParticles:1b,ShowIcon:1b},{Id:11,Amplifier:2,Duration:9600,ShowParticles:1b,ShowIcon:1b},{Id:22,Amplifier:3,Duration:6000,ShowParticles:1b,ShowIcon:1b},{Id:12,Amplifier:0,Duration:12000,ShowParticles:0b,ShowIcon:1b}],display:{Name:'{\"text\":\"终极强化药水\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"下界熔岩淬炼而成\",\"color\":\"dark_red\",\"italic\":false}','{\"text\":\"蕴含六重强化之力\",\"color\":\"yellow\",\"italic\":false}']}}"
+  },
+  "cookingtime": 1600,
+  "experience": 8.0,
+  "require_block": true,
+  "required_blocks": ["mynethersdelight:nether_stove[soul=false]"],
+  "require_roaring": true,
+  "heat_consumption": 120,
+  "required_fluid": "minecraft:lava",
+  "fluid_consumption": 500,
+  "require_tags": true,
+  "required_tags": ["Yim"],
+  "show_tags_in_jei": false,
+  "finish_command": "playsound minecraft:block.brewing_stand.brew master @a[distance=..10] ~ ~ ~ 1 1.5",
+  "output_command_player": "effect give @s minecraft:absorption 300 3 true",
+  "jei_description": [
+    "§c需要下界炉灶（地狱火）+ 高燃状态 + 熔岩液体。",
+    "§7包含 §c力量IV §7/ §e速度IV §7/ §a生命恢复III §7/ §b抗性IV §7/ §6吸收IV §7/ §6火焰抗性§7。",
+    "§7取出时额外获得3级吸收效果。"
+  ]
+}

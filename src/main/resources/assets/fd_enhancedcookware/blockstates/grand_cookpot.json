@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "fd_enhancedcookware:block/grand_cookpot" },
+    "facing=south": { "model": "fd_enhancedcookware:block/grand_cookpot", "y": 180 },
+    "facing=west":  { "model": "fd_enhancedcookware:block/grand_cookpot", "y": 270 },
+    "facing=east":  { "model": "fd_enhancedcookware:block/grand_cookpot", "y": 90  }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "基础蔬菜汤 — 炉灶 / 普通火焰 / 无液体 / 无标签",
+  "ingredients": [
+    {"item": "minecraft:potato",       "count": 3},
+    {"item": "minecraft:carrot",       "count": 2},
+    {"item": "minecraft:beetroot",     "count": 1},
+    {"item": "minecraft:brown_mushroom","count": 1}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {"item": "farmersdelight:vegetable_soup", "count": 1},
+  "cookingtime": 300,
+  "experience": 0.5,
+  "require_block": true,
+  "required_blocks": ["farmersdelight:stove"],
+  "jei_description": ["§7在炉灶上用蔬菜熬制的暖心热汤。"]
+}

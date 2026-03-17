@@ -1,0 +1,14 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "快手零食 — 极短烹饪时间 / 无特殊要求",
+  "ingredients": [
+    {"item": "minecraft:apple",  "count": 2},
+    {"item": "minecraft:sugar",  "count": 1},
+    {"item": "minecraft:honey_bottle", "count": 1}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {"item": "farmersdelight:apple_cider", "count": 2},
+  "cookingtime": 80,
+  "experience": 0.3,
+  "jei_description": ["§7简单快手，只需 4 秒即可完成！"]
+}

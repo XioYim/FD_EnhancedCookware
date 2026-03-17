@@ -1,0 +1,48 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "神圣铠甲 — 下界合金胸甲，Protection X + 自定义属性 + 多行Lore，需下界/末地炉灶 + 高燃",
+  "recipe_title": "§d§l神圣锻造",
+  "ingredients": [
+    {"item": "minecraft:netherite_chestplate", "count": 1},
+    {"item": "minecraft:nether_star",          "count": 2},
+    {"item": "minecraft:shulker_shell",        "count": 4},
+    {"item": "minecraft:elytra",               "count": 1},
+    {"item": "minecraft:diamond",              "count": 12},
+    {"item": "minecraft:gold_ingot",           "count": 8},
+    {"item": "minecraft:end_crystal",          "count": 1}
+  ],
+  "result": {
+    "item": "minecraft:netherite_chestplate",
+    "count": 1,
+    "nbt": "{display:{Name:'{\"text\":\"天界护甲\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"由末影龙之力淬炼\",\"color\":\"dark_purple\",\"italic\":false}','{\"text\":\"坚不可摧，永世长存\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"防御 +30 / 韧性 +15 / 击退 100%\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"[ 神圣·传世之作 ]\",\"color\":\"dark_gray\",\"italic\":false}']},Enchantments:[{id:\"minecraft:protection\",lvl:10s},{id:\"minecraft:unbreaking\",lvl:5s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:thorns\",lvl:3s},{id:\"minecraft:blast_protection\",lvl:4s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:30.0d,Operation:0,UUID:[I;-2000001,0,0,1],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:15.0d,Operation:0,UUID:[I;-2000002,0,0,2],Slot:\"chest\"},{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:1.0d,Operation:0,UUID:[I;-2000003,0,0,3],Slot:\"chest\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:20.0d,Operation:0,UUID:[I;-2000004,0,0,4],Slot:\"chest\"}]}"
+  },
+  "cookingtime": 3200,
+  "experience": 25.0,
+  "require_block": true,
+  "required_blocks": [
+    "mynethersdelight:nether_stove",
+    "endersdelight:endstone_stove"
+  ],
+  "require_roaring": true,
+  "heat_consumption": 80,
+  "require_tags": true,
+  "required_tags": ["Yim"],
+  "show_tags_in_jei": false,
+  "tick_command_block": "particle minecraft:end_rod ~ ~1 ~ 0.4 0.4 0.4 0.05 8",
+  "tick_interval": 40,
+  "finish_command": [
+    "playsound minecraft:entity.ender_dragon.growl master @a[distance=..20] ~ ~ ~ 0.5 1.5",
+    "particle minecraft:dragon_breath ~ ~1 ~ 0.5 0.5 0.5 0.05 20"
+  ],
+  "output_command_player": [
+    "effect give @s minecraft:resistance 600 3 true",
+    "effect give @s minecraft:regeneration 300 2 true",
+    "effect give @s minecraft:absorption 600 4 true"
+  ],
+  "jei_description": [
+    "§d需要下界炉灶或末地炉灶 + 高燃 + 80点热量消耗。",
+    "§7防具属性：§c防御 +30 §7/ §e韧性 +15 §7/ §b击退抗性 100%§7 / §a最大生命 +20❤",
+    "§7附魔：保护X·耐久V·经验修补·荆棘III·爆炸保护IV",
+    "§7取出时获得：抗性IV·生命恢复III·吸收V（30秒）"
+  ]
+}

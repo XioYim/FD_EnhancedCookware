@@ -1,0 +1,24 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "高燃炖牛肉 — 任意炉灶 / 高燃火焰 / 消耗热量20 / 需水",
+  "ingredients": [
+    {"item": "minecraft:beef",        "count": 3},
+    {"item": "minecraft:potato",      "count": 2},
+    {"item": "minecraft:carrot",      "count": 2},
+    {"item": "minecraft:brown_mushroom", "count": 1}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {"item": "farmersdelight:beef_stew", "count": 2},
+  "cookingtime": 500,
+  "experience": 1.5,
+  "require_roaring": true,
+  "heat_consumption": 20,
+  "required_fluid": "minecraft:water",
+  "fluid_consumption": 250,
+  "finish_command": "playsound minecraft:entity.experience_orb.pickup master @a[distance=..8] ~ ~ ~ 1 1",
+  "jei_description": [
+    "§c需要剧烈燃烧的火焰！",
+    "§7高温慢炖，肉质更加鲜嫩。",
+    "§7每次制作消耗 §e20 §7点热量。"
+  ]
+}

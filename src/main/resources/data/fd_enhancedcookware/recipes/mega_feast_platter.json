@@ -1,0 +1,31 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "盛宴大拼盘 — 多种材料 / 多炉灶 / 普通火 / 大量产出",
+  "ingredients": [
+    {"item": "minecraft:beef",     "count": 2},
+    {"item": "minecraft:porkchop", "count": 2},
+    {"item": "minecraft:chicken",  "count": 2},
+    {"item": "minecraft:potato",   "count": 2},
+    {"item": "minecraft:carrot",   "count": 2},
+    {"item": "minecraft:beetroot", "count": 1},
+    {"item": "minecraft:bread",    "count": 1},
+    {"item": "minecraft:egg",      "count": 2}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {"item": "farmersdelight:roast_chicken", "count": 4},
+  "cookingtime": 800,
+  "experience": 3.0,
+  "require_block": true,
+  "required_blocks": [
+    "farmersdelight:stove",
+    "dungeonsdelight:dungeon_stove",
+    "endersdelight:endstone_stove"
+  ],
+  "required_fluid": "minecraft:water",
+  "fluid_consumption": 400,
+  "jei_description": [
+    "§6十二格食材满格的丰盛盛宴！",
+    "§7一次产出 4 份烤鸡。",
+    "§b需消耗 400 mL 水。"
+  ]
+}

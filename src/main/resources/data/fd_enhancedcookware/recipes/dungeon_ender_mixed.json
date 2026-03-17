@@ -1,0 +1,35 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "地牢末地混合炖 — 地牢或末地炉灶 / 普通火 / 消耗水 / 需chef标签",
+  "ingredients": [
+    {"item": "minecraft:chorus_fruit",   "count": 3},
+    {"item": "minecraft:phantom_membrane","count": 1},
+    {"item": "minecraft:bone",           "count": 3},
+    {"item": "minecraft:rotten_flesh",   "count": 2},
+    {"item": "minecraft:spider_eye",     "count": 1}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {
+    "item": "minecraft:suspicious_stew",
+    "count": 2,
+    "nbt": "{Effects:[{EffectId:1,EffectDuration:600}]}"
+  },
+  "cookingtime": 520,
+  "experience": 2.2,
+  "require_block": true,
+  "required_blocks": [
+    "dungeonsdelight:dungeon_stove",
+    "endersdelight:endstone_stove"
+  ],
+  "required_fluid": "minecraft:water",
+  "fluid_consumption": 200,
+  "require_tags": true,
+  "required_tags": ["chef"],
+  "show_tags_in_jei": true,
+  "start_command_player": "particle minecraft:witch ~ ~1 ~ 0.3 0.3 0.3 0.05 10",
+  "jei_description": [
+    "§5地牢或末地炉灶任选其一。",
+    "§6需要 §lchef§r§6 权限标签。",
+    "§7邪异材料经过净化，赋予速度效果。"
+  ]
+}

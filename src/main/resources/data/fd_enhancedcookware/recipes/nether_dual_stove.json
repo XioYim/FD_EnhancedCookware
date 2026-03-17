@@ -1,0 +1,27 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "下界双焰汤 — 接受下界炉灶两种火焰状态（OR逻辑） / 无液体",
+  "ingredients": [
+    {"item": "minecraft:nether_wart",  "count": 4},
+    {"item": "minecraft:soul_sand",    "count": 1},
+    {"item": "minecraft:magma_cream",  "count": 2},
+    {"item": "minecraft:blaze_powder", "count": 1}
+  ],
+  "container": {"item": "minecraft:glass_bottle"},
+  "result": {
+    "item": "minecraft:potion",
+    "count": 1,
+    "nbt": "{Potion:\"minecraft:fire_resistance\"}"
+  },
+  "cookingtime": 360,
+  "experience": 1.8,
+  "require_block": true,
+  "required_blocks": [
+    "mynethersdelight:nether_stove[soul=false]",
+    "mynethersdelight:nether_stove[soul=true]"
+  ],
+  "jei_description": [
+    "§c地狱火§7或§9灵魂火§7下界炉灶均可使用。",
+    "§7两种下界之焰皆可炼制抗火药剂。"
+  ]
+}

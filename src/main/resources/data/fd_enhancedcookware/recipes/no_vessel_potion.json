@@ -1,0 +1,25 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "无器皿配方 — 不需要器皿槽 / 直接输出物品 / 末地炉灶高燃",
+  "ingredients": [
+    {"item": "minecraft:chorus_fruit",    "count": 5},
+    {"item": "minecraft:ender_eye",       "count": 1},
+    {"item": "minecraft:amethyst_shard",  "count": 4}
+  ],
+  "result": {
+    "item": "minecraft:echo_shard",
+    "count": 2,
+    "nbt": "{display:{Lore:['{\"text\":\"末地之声的结晶\",\"color\":\"aqua\"}']}}"
+  },
+  "cookingtime": 560,
+  "experience": 3.5,
+  "require_block": true,
+  "required_blocks": ["endersdelight:endstone_stove"],
+  "require_roaring": true,
+  "heat_consumption": 25,
+  "jei_description": [
+    "§b此配方§l不需要§r§b器皿！",
+    "§7末地碎片凝聚，化为回声碎片结晶。",
+    "§e消耗 25 点热量。"
+  ]
+}

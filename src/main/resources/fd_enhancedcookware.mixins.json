@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.xioyim.fdenhancedcookware.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "fd_enhancedcookware.refmap.json",
+  "mixins": [],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

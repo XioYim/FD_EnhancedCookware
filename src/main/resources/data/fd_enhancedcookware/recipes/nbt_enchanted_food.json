@@ -1,0 +1,27 @@
+{
+  "type": "fd_enhancedcookware:grand_cookpot",
+  "_comment": "附魔食物 — 需要特定NBT附魔书作为原料 / 任意炉灶",
+  "ingredients": [
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "nbt": "{StoredEnchantments:[{id:\"minecraft:mending\",lvl:1s}]}"
+    },
+    {"item": "minecraft:golden_apple", "count": 2},
+    {"item": "minecraft:gold_ingot",   "count": 4},
+    {"item": "minecraft:honey_bottle", "count": 1}
+  ],
+  "container": {"item": "minecraft:bowl"},
+  "result": {
+    "item": "minecraft:golden_apple",
+    "count": 1,
+    "nbt": "{display:{Name:'{\"text\":\"永恒苹果\",\"color\":\"gold\",\"bold\":true}',Lore:['{\"text\":\"由修缮之力铸就\",\"color\":\"yellow\"}']}}"
+  },
+  "cookingtime": 800,
+  "experience": 5.0,
+  "output_command_player": "effect give @s minecraft:absorption 600 2 true",
+  "jei_description": [
+    "§6需要携带§l修缮§r§6附魔的附魔书作为原料。",
+    "§7完成后赋予玩家 §e吸收效果§7（30秒，等级3）。"
+  ]
+}
